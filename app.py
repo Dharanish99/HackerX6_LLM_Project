@@ -186,7 +186,7 @@ def run_main_qa_pipeline(user_query: str, chunks: List) -> str:
         return f"An error occurred during LLM reasoning: {str(e)}"
 
 # --- New Endpoint: The API for the RAG pipeline ---
-@app.post("/run_rag", tags=["Query Processing"])
+@app.post("/api/v1/hackrx/run", tags=["Query Processing"])
 async def run_rag(
     request_body: RunRequest
 ):
@@ -217,4 +217,5 @@ async def run_rag(
     return {"answers": all_answers}
 
 if __name__ == "__main__":
+
     uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
