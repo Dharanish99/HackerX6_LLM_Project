@@ -11,9 +11,9 @@ It allows users to **upload documents** (PDFs, text, etc.) and then query them w
 ## ✨ Features
 - 📄 Document ingestion & chunking  
 - 🔍 Semantic search using **Qdrant** / vector store  
-- 🧠 Large Language Model (IBM Granite-3.3-8B-Instruct) for reasoning & responses  
+- 🧠 Large Language Model (Mixtral-8x7B-Instruct) for reasoning & responses  
 - ⚡ REST API with **FastAPI**  
-- 🔑 Hugging Face integration for Granite models  
+- 🔑 Hugging Face integration for Embeddings models  
 - 🌐 Ready to integrate with any frontend  
 
 ---
@@ -23,7 +23,7 @@ It allows users to **upload documents** (PDFs, text, etc.) and then query them w
 - **FastAPI** for API backend  
 - **LangChain** for RAG pipeline  
 - **Qdrant** for vector storage  
-- **IBM Granite LLMs** (via Hugging Face)  
+- **Mixtral & llama LLMs** (via Ollama)  
 - **Uvicorn** for ASGI server  
 
 ---
